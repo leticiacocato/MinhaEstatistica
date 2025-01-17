@@ -1,7 +1,6 @@
 # Blog Datasets, Scripts and Plots
 
-Welcome to the repository where I share datasets and the corresponding scripts used in my blog posts. 
-This repository includes data files and code that I use to demonstrate various analyses, data visualizations, and machine learning techniques.
+Welcome to the repository where I share datasets and the corresponding scripts used in my blog posts. This repository includes data files and code that I use to demonstrate different types of analysis, visualizations and machine learning techniques.
 
 ## Table of Contents
 1. [Overview](#overview)
