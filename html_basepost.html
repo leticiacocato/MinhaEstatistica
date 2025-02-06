@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body {
+            text-align: justify;
+        }
+        .rainbow-text {
+            font-size: inherit; /* Inherit font size from surrounding text */
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+     
+     .code-container {
+      background-color: #f9fafb; 
+      color: #333333; /* Soft black */
+      font-size: 13px;
+      font-family: "Courier New", Courier, monospace; /* Monospaced font */
+      padding: 5px 8px; /* Padding around the content */
+      border: 1px solid #e1e4e8; /* Light border */
+      border-radius: 5px; /* Rounded corners */
+      width: 90%; /* Responsive width */
+      max-width: 800px; /* Max width */
+      margin: auto; /* Center alignment */
+      overflow: hidden; /* Prevents overflow */
+      white-space: pre-wrap; /* Preserve formatting and wrap lines */
+      line-height: 1.2;
+      word-wrap: break-word;
+     }
+      /* Code styling */
+    .code-container code {
+      color:  #333333; /* Green for code */
+    }
+       
+     /* Tag HTML */
+        .tag {
+            color: #004aad; /* Azul (Cor Principal) */
+        }
+
+        /* Atributos */
+        .attribute {
+            color: #ffc107; /* Amarelo (Cor de Destaque) */
+        }
+
+        /* Valores de atributo */
+        .value {
+            color: #228B22; /* Verde Menta (Cor de Acento) */
+        }
+
+        /* Comentários */
+        .comment {
+            color: #6c757d; /* Cinza claro (Cor Secundária) */
+        }
+
+        /* Texto padrão */
+        .text {
+            color: #333333; /* Preto Suave (Cor de Suporte) */
+        }
+    </style>   
+  <!-- <span class="rainbow-text">colors</span> -->
+    <title>ME: Subject here.</title>
+  
+      <script type="text/javascript" async /* LaTeX */
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+  
+  
+<body>
+  <p>Insert <a href="https://minhaestatistica.blogspot.com/" target="_blank">link</a>.</p>
+  
+  <ol type="A">
+    <li><b>Listing </b></li>
+    
+    \[ 
+  
+    \]
+    
+    <li><b>With</b></li>
+    \[
+    
+    \]
+    
+    <li><b>Capital</b></li>
+    
+    \[
+ 
+    \]
+
+    <li><b>Letters</b></li>
+    
+    \[
+    
+	  \] 
+    
+  <p>After understanding the different linkage methods in hierarchical clustering, the next step is to visualize how the objects or data points are grouped together through a dendrogram. A dendrogram serves as a visual representation of the hierarchical relationships between clusters, illustrating how groups are formed and how similar or different they are from each other during the clustering process. The anatomy of a dendrogram consists of several key components:</p>
+
+<ul>
+    <li><b>Listing:</b>  </li>
+    <li><b>With:</b> </li>
+    <li><b>Dots:</b> </li>
+    <li><b>Height:</b> </li>
+</ul>
+
+<p>Dendrograms are useful for determining the structure of the clusters and for deciding the number of clusters (or groups) you want to identify. By cutting the dendrogram at a certain height, you can define the level of dissimilarity at which you wish to form the final clusters. These are essential concepts to understand so you can better apply dendrograms to your data based on your goals and objectives.</p>
+
+
+<p> Writing <code style="background-color: #f0f0f0; padding: 2px 4px; font-size: 0.9em;">R</code>, <code style="background-color: #f0f0f0; padding: 2px 4px; font-size: 0.9em;">Python</code> and other codes.</p>
+ <!-- <code style="background-color: #f0f0f0; padding: 2px 4px; font-size: 0.9em;"> </code> -->
+
+
+  <h2>1) Plot in <i>R</i></h2>
+
+
+ 
+   <div class="code-container">
+    <pre><code>
+<span class="comment"># Comment</span>
+<span class="tag">library</span>(<span class="value">lib1</span>)
+<span class="tag">library</span>(<span class="value">lib2</span>) <span class="comment"># Another comment</span>
+
+<span class="comment"># </span>
+<span class="tag">data</span>(<span class="value">"thedata"</span>) 
+    </code>
+      </pre>
+        </div>  
+    
+  <div class="code-container">
+    <pre><code>
+
+  </code>
+  </pre>
+    </div>
+  
+  <p> </p>
+
+    <p>Two images side by side:</p>
+<div class="separator" style="clear: both;">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSxO4VJBszegO0EPCoZQ-SwICUVdXiDQa7i-pYe9W_2i35633MkOjnsAunxWASLqOtqfxkQtOEYiJ2OkdXLEXXv8_dKFha_UUVO-wLu9YeLvyqbmLnmlDwcj9YijOh59_OJyZhYwbAVUQxPZJgItftiQPX7FlGOf7dfNq2sp436A2o99PIUZzbgRen/s1600/Rplot1.png" alt="Imagem 1" width="45%" style="display:inline-block; text-align: center; margin-right: 10px;">
+  
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj28BsnVt_FbU1XgvKZYGoHcnkdYHDfURIVl-P93g8-Pwq0PHgIl8kKRmpYDc1XD4zjp-527zMSAnlDrVuGT22pu3pyK9gHYrJmomCvZUD-eTh9YufhaI4a_DKXMMEujjtPcd0t2Ik0EqP0xbGqlBM3ew7-R7N0_sOyAdocoHOZvAWDRpVXT90rpJmt/s1600/Rplot2.png" alt="Imagem 2" width="45%" style="display:inline-block; text-align: center; margin-left: 10px;">
+</div>
+
+ 
+<p>Single image, adjusted height and width</p>
+  <div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1xo7gv-ps9G6I_gkrvAQe2Qgkfq5WZDQJDo1BjdJpJldTDg3av3Shje4am0vVMNmpcafMbjTWFyxqlR-dG4oqHSktJgt9_Ct5mLYQJWWvnhY5YZ_z_UfUNHxixAdL8Vvs_fITmFNWfO5c-qhf5vO88P4vbDF0rFTgpg8mGKlhEqXwoNMAfLyVLc3b/s1600/Rplot3.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="450" height="500" data-original-height="733" data-original-width="998" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1xo7gv-ps9G6I_gkrvAQe2Qgkfq5WZDQJDo1BjdJpJldTDg3av3Shje4am0vVMNmpcafMbjTWFyxqlR-dG4oqHSktJgt9_Ct5mLYQJWWvnhY5YZ_z_UfUNHxixAdL8Vvs_fITmFNWfO5c-qhf5vO88P4vbDF0rFTgpg8mGKlhEqXwoNMAfLyVLc3b/s1600/Rplot3.png"/></a></div>
+  
+
+
+<p>Inline frame</p> 
+<iframe src="https://leticiacocato.github.io/MinhaEstatistica/GraphSeries/Dendograms/Graphs/dendrogram_interactive_ASSLT.html
+" width="100%" height="500px" style="border:none;"></iframe>
+  
+  
+      <h2>2) Plot in <i>Python</i></h2>
+  
+  
+   <div class="code-container">
+    <pre><code>
+<span class="comment"># Comment</span>
+<span class="tag">import</span> <span class="value">library</span> <span class="tag">as</span> <span class="value">abrv</span>
+<span class="tag">import</span> <span class="value">library2</span> <span class="tag">as</span> <span class="value">abrv2</span> <span class="comment"> # Comment</span>
+    </code>
+      </pre>
+        </div>   
+
+  
+  
+<h2>Conclusion</h2>  
+<p>Write conclusion here. </p>
+
+<p>Follow on <i>Instagram</i> <b>@minhaestatistica</b>, and <a href="https://github.com/leticiacocato/MinhaEstatistica" target="_blank">GitHub</a>!</p>  
+
+<p><b>Letícia - Minha Estatística</b>.</p>
+  
+<h2>References</h2>
+  
+<ul style="list-style-type: circle;">
+    <li><a href="https://www.example.com">The reference</a></li>
+    <li><a href="https://www.anotherexample.com" target="_blank">The reference</a></li>
+  <li><strong>Writers</strong>. Title. V.777 I.3 V.1.0, 2025. (Country).</li>
+
+  </ul>
+  
+  </body>
+</html> 
